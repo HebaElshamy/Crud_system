@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+
+
+        <div class="container w-50 shadow my-5 py-5">
+            <h1>CRUD SYSTEM</h1>
+            <label>productName:</label>
+            <input type="text" class="form-control mb-3"  id="productName">
+            <label>productCategory:</label>
+            <input type="text" class="form-control mb-3" id="productCategory">
+            <label>productPrice:</label>
+            <input type="number" class="form-control mb-3" id="productPrice">
+            <label>productDescription:</label>
+            <textarea class="form-control mb-3" id="productDescription" ></textarea>
+      
+      
+            <button  onclick="addProduct() " id="addProducts" class="btn btn-info">add product</button>
+            <button  onclick="saveUpdateProduct() " id="updateProducts" class="btn  bg-warning">update product</button>
+      
+      
+           
+          </div>
+      <input id="searchInp" type="text" class="form-control w-25 mx-auto" placeholder="search..." onkeyup="search();">
+      
+      
+          <table class="table table-striped w-75 mx-auto mt-5">
+            <thead>
+             <th>index</th>
+             <th>name</th>
+             <th>category</th>
+             <th>price</th>
+             <th>description</th>
+             <th>update</th>
+             <th>delete</th>
+            </thead>
+            <tbody id="tbody">
+          
+             
+            </tbody>
+          </table>
+         
+         
+      
+
+
+       <script src="js/jquery-3.6.0.min.js"></script>
+       <script src="js/popper.min.js"></script>
+       <script src="js/bootstrap.min.js"></script>
+       <script src="js/mine.js"></script>
+
+    </body>
+</html>
